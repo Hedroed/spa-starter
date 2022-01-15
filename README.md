@@ -1,5 +1,7 @@
 # Parcel React Tailwind boilerplate
 
+Inspired by https://github.com/umstek/parcel-typescript-react-tailwind
+
 # What is Tailwind CSS?
 
 Then I found out Tailwind CSS, which focuses on being a low-level [utility-first](https://tailwindcss.com/docs/utility-first/) (meta) CSS framework.
@@ -101,6 +103,7 @@ https://tailwindcomponents.com/component/card-like-kanban
 https://tailwindui.com/components/application-ui/lists/grid-lists
 
 https://github.com/estevanmaito/windmill-dashboard
+https://windmill-dashboard.vercel.app/index.html
 
 https://www.tailwindtoolbox.com/starter-templates
 
