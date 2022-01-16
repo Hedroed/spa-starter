@@ -7,11 +7,15 @@
     "build": "parcel build --no-source-maps --dist-dir dist ./src/index.html",
     "clean": "rm -rf .parcel-cache dist"
   },
+  "alias": {
+    "react": "preact/compat",
+    "react-dom/test-utils": "preact/test-utils",
+    "react-dom": "preact/compat",
+    "react/jsx-runtime": "preact/jsx-runtime"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/react": "^17.0.38",
-    "@types/react-dom": "^17.0.11",
     "autoprefixer": "^10.4.2",
     "parcel": "^2.2.0",
     "postcss": "^8.4.5",
@@ -20,7 +24,6 @@
   "dependencies": {
     "@headlessui/react": "^1.4.3",
     "@heroicons/react": "^1.0.5",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "preact": "^10.6.4"
   }
 }

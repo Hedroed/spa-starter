@@ -108,3 +108,6 @@ https://windmill-dashboard.vercel.app/index.html
 https://www.tailwindtoolbox.com/starter-templates
 
 https://parceljs.org/recipes/react/
+
+https://preactjs.com/guide/v10/getting-started#aliasing-in-parcel
+https://preactjs.com/guide/v10/typescript
