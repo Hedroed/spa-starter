@@ -1,5 +1,4 @@
 import 'twin.macro'
-import { h } from 'preact'
 
 import { SidebarContent } from "./SidebarContent"
 

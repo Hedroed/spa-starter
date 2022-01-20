@@ -7,6 +7,11 @@
     "build": "parcel build --no-source-maps --dist-dir dist ./src/index.html",
     "clean": "rm -rf .parcel-cache dist"
   },
+  "babelMacros": {
+    "twin": {
+      "preset": "goober"
+    }
+  },
   "alias": {
     "react": "preact/compat",
     "react-dom/test-utils": "preact/test-utils",
@@ -17,7 +22,6 @@
   "license": "ISC",
   "devDependencies": {
     "@agney/babel-plugin-goober-css-prop": "^0.0.1",
-    "@babel/plugin-transform-react-jsx": "^7.16.7",
     "autoprefixer": "^10.4.2",
     "babel-plugin-transform-goober": "^1.2.0",
     "parcel": "^2.2.0",

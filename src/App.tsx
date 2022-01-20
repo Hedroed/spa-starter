@@ -1,4 +1,3 @@
-import { h } from 'preact'
 import 'twin.macro'
 
 import { useState, useCallback } from 'react'

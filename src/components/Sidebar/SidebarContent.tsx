@@ -1,4 +1,3 @@
-import { h } from 'preact'
 import 'twin.macro'
 
 import { HomeIcon, ChartPieIcon, ClipboardListIcon, CollectionIcon, CursorClickIcon, DuplicateIcon, ViewListIcon, TemplateIcon, ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/solid'
