@@ -1,4 +1,6 @@
-import React from 'react'
+import { h } from 'preact'
+import 'twin.macro'
+
 import {DesktopSidebar} from './DesktopSidebar'
 import {MobileSidebar} from './MobileSidebar'
 

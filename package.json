@@ -16,10 +16,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@agney/babel-plugin-goober-css-prop": "^0.0.1",
+    "@babel/plugin-transform-react-jsx": "^7.16.7",
     "autoprefixer": "^10.4.2",
+    "babel-plugin-transform-goober": "^1.2.0",
     "parcel": "^2.2.0",
     "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.15"
+    "tailwindcss": "^2.2.19",
+    "twin.macro": "^2.8.2"
   },
   "dependencies": {
     "@headlessui/react": "^1.4.3",
