@@ -16,10 +16,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@emotion/babel-plugin": "^11.7.2",
+    "@emotion/react": "^11.7.1",
     "autoprefixer": "^10.4.2",
     "parcel": "^2.2.0",
     "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.15"
+    "tailwindcss": "^2.2.19",
+    "twin.macro": "^2.8.2"
   },
   "dependencies": {
     "@headlessui/react": "^1.4.3",
