@@ -1,6 +1,9 @@
 {
     "plugins": {
         "tailwindcss": {},
-        "autoprefixer": {}
+        "autoprefixer": {},
+        "postcss-modules": {
+            "generateScopedName": "[hash:base64:5]"
+        }
     }
 }
