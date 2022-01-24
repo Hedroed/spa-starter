@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "parcel serve ./src/index.html --open",
-    "build": "parcel build --no-source-maps --dist-dir dist ./src/index.html",
+    "build": "parcel build --no-source-maps --no-optimize --dist-dir dist ./src/index.html",
     "clean": "rm -rf .parcel-cache dist"
   },
   "alias": {
@@ -17,6 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.2",
+    "babel-plugin-react-css-modules": "^5.2.6",
     "parcel": "^2.2.0",
     "postcss": "^8.4.5",
     "postcss-modules": "^4.3.0",
