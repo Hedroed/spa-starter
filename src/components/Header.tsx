@@ -16,7 +16,7 @@ export function Header({ toggleSideMenu, ...props }) {
             <div className="container max-w-7xl flex items-center justify-between h-full px-6 mx-auto text-purple-600 dark:text-purple-300">
                 {/* Mobile hamburger */}
                 <button
-                    className="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none focus:shadow-outline-purple"
+                    className="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none focus:outline-purple-500"
                     onClick={toggleSideMenu}
                     aria-label="Menu"
                 >
@@ -40,7 +40,7 @@ export function Header({ toggleSideMenu, ...props }) {
                     {/* Theme toggler */}
                     <li className="flex">
                         <button
-                            className="rounded-md focus:outline-none focus:shadow-outline-purple"
+                            className="rounded-md focus:outline-none focus:outline-purple-500"
                             //   @click="toggleTheme"
                             aria-label="Toggle color mode"
                         >
@@ -50,7 +50,7 @@ export function Header({ toggleSideMenu, ...props }) {
                     {/* Notifications menu */}
                     <li className="relative">
                         <button
-                            className="relative align-middle rounded-md focus:outline-none focus:shadow-outline-purple"
+                            className="relative align-middle rounded-md focus:outline-none focus:outline-purple-500"
                             //   @click="toggleNotificationsMenu"
                             //   @keydown.escape="closeNotificationsMenu"
                             onClick={clickNotificationsMenu}
@@ -111,7 +111,7 @@ export function Header({ toggleSideMenu, ...props }) {
                     {/* Profile menu */}
                     <li className="relative">
                         <button
-                            className="align-middle rounded-full focus:shadow-outline-purple focus:outline-none"
+                            className="align-middle rounded-full focus:outline-purple-500 focus:outline-none"
                             //   @keydown.escape="closeProfileMenu"
                             onClick={clickProfileMenu}
                             aria-label="Account"
