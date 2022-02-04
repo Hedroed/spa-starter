@@ -1,113 +1,46 @@
-# Parcel React Tailwind boilerplate
+# Getting Started with Create React App
 
-Inspired by https://github.com/umstek/parcel-typescript-react-tailwind
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# What is Tailwind CSS?
+## Available Scripts
 
-Then I found out Tailwind CSS, which focuses on being a low-level [utility-first](https://tailwindcss.com/docs/utility-first/) (meta) CSS framework.
+In the project directory, you can run:
 
-> Tailwind CSS is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override.
+### `npm start`
 
-With Tailwind CSS, you can use class names to apply bite-sized styling to your html elements, almost eliminating the pain of manually writing CSS. The [homepage](https://tailwindcss.com/) has a good demo so visit and see; don't take my word for it.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-This project contains [Parcel Bundler](https://parceljs.org/recipes/react/#tailwind-css), [TypeScript](https://www.typescriptlang.org/), [React](https://reactjs.org) and [Tailwind](https://tailwindcss.com/docs/installation/using-postcss) other ways to use it. The stack I’ve chosen might as well be harder to get started.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
+### `npm test`
 
-There are available `scripts` configured in `package.json` so that you can run, build and clean the project easily.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-```json
-"scripts": {
-  "start": "parcel serve ./src/index.html --open",
-  "build": "parcel build --dist-dir dist src/index.html",
-  "clean": "rm -rf .parcel-cache dist"
-},
-```
+### `npm run build`
 
-Create the `main.tsx` and add your React app there. Note that we have added a custom card component which uses Tailwind styles with utility classes. `src/components/Card/index.tsx` and `src/views/App.tsx` are omitted for clarity. Utility classes is [not the only way](https://tailwindcss.com/docs/reusing-styles) you can add Tailwind styles. Since we’re trying Tailwind with React, utility classes is enough for us right now.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```ts
-import * as React from "react";
-import * as ReactDOM from "react-dom";
-import { App } from "./views/App";
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-ReactDOM.render(React.createElement(App), document.getElementById("app"));
-```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Create `main.css` file and add the below. These are tailwind directives. This is needed to inject tailwind [styles](https://tailwindcss.com/docs/preflight) and utility classes into your CSS.
+### `npm run eject`
 
-```css
-@tailwind base;
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-@tailwind components;
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-@tailwind utilities;
-```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-Add `.postcssrc` file inside the project folder (i.e.: one level up from `src` folder). Tailwind CSS is a [PostCSS](https://postcss.org/) plugin where PostCSS handles all pre/post processing of CSS you write, such as adding [vendor prefixes](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix) [automatically](https://github.com/postcss/autoprefixer). Parcel has built-in support for PostCSS, but doesn’t know yet about Tailwind, so we have to configure it with the below content. Make sure you include `tailwindcss` before `autoprefixer`.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-```js
-{
-  "plugins": {
-    "postcss-import": true,
-    "tailwindcss": true,
-    "postcss-nested": true,
-    "autoprefixer": true
-  }
-}
-```
+## Learn More
 
-Now it’s show-time. Run `yarn` to install dependencies and `yarn start` to start. Since you have specified `--open` in `yarn start`, you’ll see the browser open with the `index.html` file.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-You should see a card with a title and a description.
-
-# The good, the bad, and the ugly
-
-I can notice several good things about Tailwind CSS at a glance.
-
-- Get things done without having to write a lot of code.
-- No need to worry about different CSS naming standards and conventions such as [BEM](http://getbem.com/naming/) or [OOCSS](http://oocss.org/).
-- The built-in styles are pretty good and useful.
-- Tailwind doesn’t hate customization. New plugins can be created and configuration is very flexible.
-- Can write your own CSS also, if you want an escape route (No lock-in).
-
-There isn’t much to complain about the library but,
-
-- Fonts, Icons, animations aren’t built-in. Adding them can be complicated.
-- Advanced controls such as switches, calendars, tables, floating notifications, modals etc. are not available.
-
-(I had more points here for the old versions but looks like now tailwind supports pretty much everything you'll need.)
-
-# Resources
-
-https://headlessui.dev/
-
-https://tailwindui.com/
-
-https://www.tailwindtoolbox.com/
-
-https://tailwindcomponents.com/
-
-https://tailwindtemplates.io/
-
-https://github.com/aniftyco/awesome-tailwindcss
-
-
-https://tailwindcss.com/docs/hover-focus-and-other-states
-
-https://tailwindcss.com/docs/theme
-
-https://tailwindcomponents.com/component/recipe-cooking
-
-https://tailwindcomponents.com/component/card-like-kanban
-
-https://tailwindui.com/components/application-ui/lists/grid-lists
-
-https://github.com/estevanmaito/windmill-dashboard
-https://windmill-dashboard.vercel.app/index.html
-
-https://www.tailwindtoolbox.com/starter-templates
-
-https://parceljs.org/recipes/react/
-
-https://preactjs.com/guide/v10/getting-started#aliasing-in-parcel
-https://preactjs.com/guide/v10/typescript
+To learn React, check out the [React documentation](https://reactjs.org/).
