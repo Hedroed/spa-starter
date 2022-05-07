@@ -1,5 +1,4 @@
-import { render } from "react-dom";
+import './main.css'
 import { App } from "./App";
 
-const app = document.getElementById("app");
-render(<App/>, app);
+export default App

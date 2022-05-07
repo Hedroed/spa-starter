@@ -1,5 +1,3 @@
-import './main.css'
-
 import { useState, useCallback } from 'react'
 
 import { Button } from './components/Button'
